@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Geometria";
+  src: local('Regular'), url("../fonts/Geometria.woff2") format("woff2"),
+       url("../fonts/Geometria.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local('Medium'), url("../fonts/GeometriaMedium.woff2") format("woff2"),
+       url("../fonts/GeometriaMedium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: "Geometria", Arial, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/*header*/
+
+.header-title {
+  font-weight: 500;
+  color: #e38b75;
+}
+
+
+/*main*/
+.calculator {
+  margin: 0;
+  padding: 20px;
+  background-color: #eed8c9;
+  border-radius: 15px;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.15),
+  0 3px 0px rgba(0, 0, 0, 0.3);
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.number {
+  background-color: #727077;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.number:hover {
+  background-color: #55389e;
+}
+
+.operator {
+  background-color: #a49592;
+  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.operator:hover {
+  background-color: #91635a;
+}
+
+.clear {
+  background-color: #e38b75;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.clear:hover {
+  background-color: #ca4f30;
+}
+
+.display {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 -3px 0px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  color: #91635a;
+}
+
+.display:active {
+  border: none;
+}
