@@ -13,7 +13,7 @@ buttons.forEach(btn => {
     if ((content >= '0' && content <= '9') && operator === '') {
       input = input + content;
       first = first + content;
-    } else if ((content === '.') && (first !== '')  && (second === '')) {
+    } else if ((content === '.') && (first !== '') && operator === '') {
       if (first.indexOf('.') === -1) {
         input = input + content;
         first = first + content;
